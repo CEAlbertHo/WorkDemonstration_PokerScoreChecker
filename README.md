@@ -13,10 +13,11 @@
 ![主視窗](https://i.ibb.co/LhWtbKB/DemoPNG.png)
 
 按鈕說明
-Create Deck : 創建發牌用的牌堆。
-Create Hand : 創建玩家手牌。
-Shuffle Deck : 對發牌用的牌堆洗牌。
-Shuffle x1000 Test : 對發牌用的牌堆洗牌 ( 1000 次 )。
-Deal 1 To Hand : 發一張牌給玩家
+
+- Create Deck : 創建發牌用的牌堆。
+- Create Hand : 創建玩家手牌。
+- Shuffle Deck : 對發牌用的牌堆洗牌。
+- Shuffle x1000 Test : 對發牌用的牌堆洗牌 ( 1000 次 )。
+- Deal 1 To Hand : 發一張牌給玩家
 
 建立牌堆以及玩家手牌後便可進行發牌，並會自動計算玩家當前的手牌分數。
