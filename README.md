@@ -21,3 +21,6 @@
 - Deal 1 To Hand : 發一張牌給玩家
 
 建立牌堆以及玩家手牌後便可進行發牌，並會自動計算玩家當前的手牌分數。
+
+
+// Copyright ©2020 Albert Ho ( rt135792005@gmail.com ). All rights reserved.
