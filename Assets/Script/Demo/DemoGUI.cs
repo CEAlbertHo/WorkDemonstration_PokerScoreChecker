@@ -7,6 +7,12 @@ public class DemoGUI : MonoBehaviour
 {
     private CardDeck nowCardDeck;
     private CardDeck nowHand;
+    private Blackjack.BlackjackGameScore blackjackGameScore;
+
+    private void Awake()
+    {
+        blackjackGameScore = new();
+    }
 
     private void OnGUI()
     {
@@ -62,9 +68,9 @@ public class DemoGUI : MonoBehaviour
             handInfo += $"\n{ nowHand.Cards[ i ].CardInfo?.GetInfoStr() }";
         GUI.Label( new Rect( 450, 0, 150, 800 ), handInfo );
 
-        // Hand Score
-        float handScore = 0f;
-        string handScoreInfo = $"手牌分數 : { handScore }";
+        // Blackjack Score
+        int handScore_blackJack = blackjackGameScore.GetScore( nowHand.Cards );
+        string handScoreInfo = $"手牌分數 (Blackjack) : { handScore_blackJack }";
         GUI.Label( new Rect( 650, 0, 150, 800 ), handScoreInfo );
     }
 }
