@@ -10,7 +10,7 @@
 
 主畫面如圖所示。
 
-![主視窗](https://i.ibb.co/2s1rDWX/Excel-Converter.png)
+![主視窗](https://ibb.co/93LTzPB.png)
 
 按鈕說明
 Create Deck : 創建發牌用的牌堆。
