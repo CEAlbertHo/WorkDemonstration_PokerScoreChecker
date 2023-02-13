@@ -5,6 +5,7 @@ using Poker;
 
 namespace Blackjack
 {
+    // 21 點分數計算
     public class BlackjackGameScore : PokerGameBase
     {
         private int cSpecialScore_BaseA = 1;

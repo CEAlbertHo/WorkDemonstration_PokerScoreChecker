@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Poker;
 
+// Demo OnGUI 
 public class DemoGUI : MonoBehaviour
 {
     private CardDeck nowCardDeck;
