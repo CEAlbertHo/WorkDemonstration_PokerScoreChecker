@@ -5,7 +5,7 @@ using ShuffleUtil;
 
 namespace Poker
 {
-     // µP²Õ¥Í¦¨
+     // ç‰Œçµ„ç”Ÿæˆ
     public class DeckBuilder
     {
         public const int cPokerSuit_Min = 1;
@@ -40,7 +40,7 @@ namespace Poker
         }
     }
 
-    // µP°ï
+    // ç‰Œå †
     public class CardDeck
     {
         public List<Card> Cards;

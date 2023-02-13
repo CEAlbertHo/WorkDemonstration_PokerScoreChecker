@@ -52,14 +52,14 @@ public class DemoGUI : MonoBehaviour
             return;
 
         // Hand
-        string handInfo = "¤âµP¸ê°T";
+        string handInfo = "æ‰‹ç‰Œè³‡è¨Š";
         for( int i = 0; i < nowHand.Cards.Count; i++ )
             handInfo += $"\n{ nowHand.Cards[ i ].CardStrInfo }";
         GUI.Label( new Rect( 450, 0, 150, 800 ), handInfo );
 
         // Hand Score
         float handScore = 0f;
-        string handScoreInfo = $"¤âµP¤À¼Æ : { handScore }";
+        string handScoreInfo = $"æ‰‹ç‰Œåˆ†æ•¸ : { handScore }";
         GUI.Label( new Rect( 650, 0, 150, 800 ), handScoreInfo );
     }
 }

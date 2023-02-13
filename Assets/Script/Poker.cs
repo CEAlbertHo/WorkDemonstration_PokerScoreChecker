@@ -4,14 +4,14 @@ using UnityEngine;
 
 namespace Poker
 {
-    // ¥d¤ùÃş§O
+    // å¡ç‰‡é¡åˆ¥
     public enum ECardType
     {
         Standard,
         Joker
     }
 
-    // ªá¦â
+    // èŠ±è‰²
     public enum EPokerSuit : int
     {
         Spades   = 4,
@@ -20,7 +20,7 @@ namespace Poker
         Clubs    = 1,
     }
 
-    // µP¶¥
+    // ç‰Œéš
     public enum EPokerRank : int
     {
         Number2  = 1,
@@ -38,7 +38,7 @@ namespace Poker
         Ace      = 13,
     }
 
-    // ¼³§JµPºØÃş
+    // æ’²å…‹ç‰Œç¨®é¡
     public enum EPokerCardType
     {
         // Clubs
@@ -105,7 +105,7 @@ namespace Poker
         Joker,
     }
 
-    // ¥d¤ù
+    // å¡ç‰‡
     public class Card
     {
         public int PokerCardType;

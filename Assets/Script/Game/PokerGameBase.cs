@@ -5,6 +5,6 @@ using Poker;
 
 public abstract class PokerGameBase
 {
-    // ºâ¤À
+    // ç®—åˆ†
     public abstract int GetScore( List<Card> iHandCards);
 }
