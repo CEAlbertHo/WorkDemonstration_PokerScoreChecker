@@ -30,11 +30,16 @@ public class DemoGUI : MonoBehaviour
         if( GUI.Button( new Rect( 0, 50, 150, 50 ), "Shuffle Deck" ) )
         {
             nowCardDeck?.Shuffle();
-            Debug.Log( "Deck Shuffle" );
             nowCardDeck?.Debug_LogNowCards();
         }
 
-        if( GUI.Button( new Rect( 0, 150, 150, 50 ), "Deal 1 To Hand" ) )
+        if( GUI.Button( new Rect( 0, 100, 150, 50 ), "Shuffle x1000 Test" ) )
+        {
+            nowCardDeck?.Shuffle( 1000 );
+            nowCardDeck?.Debug_LogNowCards();
+        }
+
+        if( GUI.Button( new Rect( 0, 250, 150, 50 ), "Deal 1 To Hand" ) )
         {
             nowCardDeck?.DealCardFromTop( nowHand );
         }
@@ -54,7 +59,7 @@ public class DemoGUI : MonoBehaviour
         // Hand
         string handInfo = "手牌資訊";
         for( int i = 0; i < nowHand.Cards.Count; i++ )
-            handInfo += $"\n{ nowHand.Cards[ i ].CardStrInfo }";
+            handInfo += $"\n{ nowHand.Cards[ i ].CardInfo?.GetInfoStr() }";
         GUI.Label( new Rect( 450, 0, 150, 800 ), handInfo );
 
         // Hand Score

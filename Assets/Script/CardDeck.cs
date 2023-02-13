@@ -8,24 +8,16 @@ namespace Poker
      // 牌組生成
     public class DeckBuilder
     {
-        public const int cPokerSuit_Min = 1;
-        public const int cPokerSuit_Max = 4;
-
-        public const int cPokerRank_Min = 1;
-        public const int cPokerRank_Max = 13;
-
+        public const int cPokerType_Min = 1;
+        public const int cPokerType_Max = 52;
 
         public static CardDeck BuildStandardDeck( bool iIsShuffle = true )
         {
             List<Card> cards = new();
-            for( int suit = cPokerSuit_Min; suit <= cPokerSuit_Max; suit++ )
+            for( int type = cPokerType_Min; type <= cPokerType_Max; type++ )
             {
-                for( int rank = cPokerRank_Min; rank <= cPokerRank_Max; rank++ )
-                {
-                    int cardIndex = ( suit - 1 ) * cPokerRank_Max + rank;
-                    Card card = new( ECardType.Standard, cardIndex, suit, rank );
-                    cards.Add( card );
-                }
+                Card card = new( type );
+                cards.Add( card );
             }
 
             CardDeck deck = new()
@@ -50,13 +42,15 @@ namespace Poker
             Cards = new();
         }
 
-        public void Shuffle( int iShuffleCount = 2 )
+        public void Shuffle( int iShuffleCount = 1 )
         {
             if( iShuffleCount <= 0 )
                 return;
 
             for( int i = 0; i < iShuffleCount; i++ )
                 Cards.Shuffle();
+
+            Debug.Log( "--- Deck Shuffle Done ---" );
         }
 
         public void DealCardFromTop( CardDeck iTarget, int iDealNum = 1 )

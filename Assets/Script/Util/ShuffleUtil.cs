@@ -16,7 +16,7 @@ namespace ShuffleUtil
 
             for( int i = iList.Count - 1; i >= 0; i-- )
             {
-                int randIndex = rand.Next( i );
+                int randIndex = rand.Next( i + 1 );
 
                 T itemR = iList[ randIndex ];
                 iList[ randIndex ] = iList[ i ];
